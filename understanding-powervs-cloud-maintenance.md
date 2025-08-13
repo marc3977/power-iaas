@@ -21,14 +21,16 @@ subcollection: power-iaas
 ### Host and dedicated host maintenance
 {: #types-of-maintenance-host}
 
-{{site.data.keyword.cloud}} performs periodic maintenance on the server hosts and dedicated hosts that run virtual machines (VM), storage and network. This maintenance upgrades the software on the underlying hypervisor, update the firmware on the hosts, network insfrastructure, storage infrastructure, or other security and performance updates. In general, users don't experience any issues during these upgrades. Modifications that require host maintenance are applied with no or little impact to running services in most cases. Scenarios can occur where the user is involved during maintenance operations.
+{{site.data.keyword.cloud}}
+IBM Power Virtual Server performs periodic maintenance on the server hosts and dedicated hosts that run virtual machines (VM), storage and network. These maintenances upgrade the software on the underlying hypervisor, update the firmware on the hosts, network insfrastructure, storage infrastructure, or other security and performance updates. In general, users don't experience any issues during these upgrades. Modifications that require host maintenance are applied with no or little impact to running services in most cases. Scenarios can occur where the user is involved during maintenance operations.
 
 Most updates are done transparently to the host and the virtual machines (VM) that run on those hosts do not see any disruption. Nondisruptive changes can occur multiple times per week or even daily if necessary, all without impacting the user experience.
 
 ### Data center maintenance
 {: #types-of-maintenance-data-center}
 
-{{site.data.keyword.cloud}} also performs periodic data center maintenance upgrades. Users don't generally experience any issues during data center maintenance. Examples of this maintenance can be updates to the network, power infrastructure, or server hardware in a data center. Most maintenance is performed without impact to the user’s workloads. Some infrequent scenarios can occur where the user might need to be involved during those operations, which are discussed in the following section.
+{{site.data.keyword.cloud}} 
+IBM Cloud® also performs periodic data center maintenance upgrades. Users don't generally experience any issues during data center maintenance. Examples of this maintenance can be updates to the network, power infrastructure, or server hardware in a data center. Most maintenance is performed without impact to the user’s workloads. Some infrequent scenarios can occur where the user might need to be involved during those operations, which are discussed in the following section.
 
 ## Possible impacts to workloads during Control Plane maintenance operations
 {: #control-plane-maintenance-impacts}
