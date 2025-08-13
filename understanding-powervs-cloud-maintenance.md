@@ -53,6 +53,8 @@ During Data Plane maintenance, some of the maintenance is transparent. In some c
 ### Network maintenance
 There can be a brief period of loss to packets-in-flight between PowerVS to Cloud services via PER connectivity while traffic normalises between the redundant modules. This is expected and normal during convergence. Additionally, all customer traffic(connectivity to PowerVS instances) may face packet loss or brief network interruption during this activity.
 
+### Storage maintenance
+
 In the case of storage maintenance to storage controllers or SAN switches, there can be a loss of redudant path which will also be reported in the operating systems of the virtual machines (VM).
 
 It is highly recommended to perform the following prior to the start of a maintenance window:
@@ -70,13 +72,4 @@ Post-Maintenance customer activity:
 {: note}
 
 
-## What to expect during a scheduled maintenance event
-{: #about-scheduled-maintenance}
 
-In scenarios where workloads cannot migrate automatically, a scheduled maintenance event occurs. When workloads can't migrate automatically, the account owner receives an email about the upcoming maintenance that requires their attention. The account owner has a maintenance period typically 30 days in length. Exceptional cases can necessitate different timelines as outlined in [Getting advanced notice for disruptive maintenance](/docs/account?topic=account-viewing-cloud-status#disruptive-maintenance).
-
-To start the maintenance event, the account owner needs to power-off their virtual machine (VM) and then power it back on. This power cycle can be initiated as soon as a maintenance notification is received. When the virtual machine (VM) resumes, it starts on the updated infrastructure. By doing so, the customer can choose when to perform the maintenance anytime ahead of the scheduled window.
-
-If the account owner takes no action before the maintenance window, the server restarts during the window that is specified in the notification email.
-
-When the virtual machine (VM) is started, customer data and configurations are restored. However, with specialty virtual machine (VM) types such as instance storage, the ephemeral data isn't restored. Any data that must be restored on Instance Storage needs to be backed up to {{site.data.keyword.cos_full_notm}} or to a block volume.
