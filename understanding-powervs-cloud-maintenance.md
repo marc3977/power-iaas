@@ -26,6 +26,8 @@ IBM Power Virtual Server performs periodic maintenance on the server hosts and d
 
 Most updates are done transparently to the host and the virtual machines (VM) that run on those hosts do not see any disruption. Nondisruptive changes can occur multiple times per week or even daily if necessary, all without impacting the user experience.
 
+For disruptive maintenances, there will be advanced notifications. Consult [Getting advanced notice for disruptive maintenance](https://cloud.ibm.com/docs/account?topic=account-viewing-notifications#disruptive-notice-maintenance) for more information.
+
 ### Data center maintenance
 {: #types-of-maintenance-data-center}
 
